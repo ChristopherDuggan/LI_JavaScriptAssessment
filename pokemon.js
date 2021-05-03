@@ -8,6 +8,12 @@ class Pokemon {
     this.health = health;
     this.type = type;
   }
+
+  takeDamage(num) {
+    this.health -= num;
+    if (this.health < 0) this.health = 0;
+    return this.health;
+  }
 }
 
 // Don't edit this line!
